@@ -161,6 +161,7 @@ function HomeContent() {
       total: total,
       createdAt: new Date().toISOString(),
       unit: unit,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any;
     localStorage.setItem("habit_goal", JSON.stringify(goal));
     setSavedGoal(goal);
