@@ -169,7 +169,7 @@ function HomeContent() {
       total: total,
       createdAt: new Date().toISOString(),
       unit: unit,
-    } as any;
+    };
     localStorage.setItem("habit_goal", JSON.stringify(goal));
     setSavedGoal(goal);
     setShowModal(false);
